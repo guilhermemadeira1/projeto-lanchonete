@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Lanchonete</h1>
+
+    <header>
+      <h2 style='font-size: 17px'>Faça seu pedido hoje e ganhe desconto!</h2>
+    </header>
+       <div id="imagem">
+
+         <img src="hamburguer.jpg" class="imagem" alt="hambúrguer" id="hamburguer">
+
+         <img src="cachorroquente.jpg"
+         class="imagem"alt="cachorro-quente" id="cachorro-quente">
+
+         <img src="pizza.jpg" class="imagem"alt="pizza" id="pizza">
+
+         <img src="batata.jpg" class="imagem"alt="batata-frita" id="batata">
+       </div>
+
+     <section>
+      <h2>Selecione ou digite o seu pedido.</h2>
+        <div id="pedir">
+         Cardápio:
+         <div id="select">
+
+           preços: <select id="opçoes">
+            <option>--</option>
+            <option value="hamburguer">Hambúrguer R$13,00</option>
+            <option value="cachorro-quente">Cachorro-quente R$8,00
+            </option>
+            <option value="pizza">Pizza R$35,00 (grande)</option>
+            <option value="batata-frita">Batata-frita R$10,00 (porção)
+            </option>
+            </select>
+         </div>
+
+            <ul type="square">
+              <li>
+                 <input type="radio" name="lista" id="hamburguer" onclick="selecionar()">
+                  <label for="hamburguer"> Hambúrguer</label>
+              </li>
+              <li>
+                <input type="radio" name="lista" id="cachorro-quente" onclick="selecionar()">
+                <label for="cachorro-quente">Cachorro-quente</label>
+              </li>
+              <li>
+                <input type="radio" name="lista" id="pizza" onclick="selecionar()">
+                <label for="pizza">Pizza</label>
+              </li>
+              <li>
+                <input type="radio" name="lista" id="batata-frita" onclick="selecionar()">
+                <label for="batata-frita">Batata-frita</label>
+              </li>
+            </ul>
+            Busca: <input type="text" name="busca" id="busca">
+
+            <input type="button" value="buscar" onclick="buscar()">
+
+            <input type="button" value="limpar" onclick="limpar()">
+        </div>
+        <div id="mensagem">
+          Escolha um.
+        </div>
+        <input id="fazer-pedido" type="button" value="fazer pedido" onclick="pedir()">
+
+    </section>
+        
+    <footer>
+        <p>Coma bem, viva bem!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
