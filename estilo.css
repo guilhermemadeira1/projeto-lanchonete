@@ -3,7 +3,8 @@ body{
     font-family: cursive;
     color:#681005;
     text-shadow: 2px 1px 0px #ffae0054;
-    background-image: url('https://toquepop.com.br/cdn/shop/products/site_f7efcddf-d0fd-41ca-bfac-ee3fff4ba7eb_1000x.jpg?v=1571610608');
+    background-image: url("imagens/fundo.jpg");
+    background-size: 100%;
 }
 h1{
     text-align: center;
@@ -44,7 +45,7 @@ select#opçoes{
 }
 div#imagem{
     text-align: center;
-    width: 500px;
+    max-width: 100%;
     background-color: #fff9c3;
     padding-bottom: 40px;
     border: solid 4px #754913; 
@@ -55,9 +56,9 @@ div#imagem{
     min-width: 300px;
 }
 .imagem:hover{
-    width: 150px;
-    height: 150px;
-    transition-duration: 0.4s;
+    width: 120px;
+    height: 120px;
+    transition-duration: 0.3s;
 }
 img{
     width: 100px;
